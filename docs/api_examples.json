@@ -1,0 +1,201 @@
+{
+  "generated_at": "2026-01-04T19:21:16.709383",
+  "purpose": "API response examples for AI Prediction Market project",
+  "apis": {
+    "polymarket": {
+      "name": "Polymarket",
+      "description": "Decentralized prediction market platform",
+      "authentication": "None required",
+      "base_url": "https://gamma-api.polymarket.com",
+      "rate_limit": "Unknown, but generous for free usage",
+      "example": {
+        "status": "success",
+        "endpoint": "https://gamma-api.polymarket.com/markets",
+        "method": "GET",
+        "params": {
+          "limit": 2
+        },
+        "response_sample": {
+          "id": "12",
+          "question": "Will Joe Biden get Coronavirus before the election?",
+          "conditionId": "0xe3b423dfad8c22ff75c9899c4e8176f628cf4ad4caa00481764d320e7415f7a9",
+          "slug": "will-joe-biden-get-coronavirus-before-the-election",
+          "twitterCardImage": "https://polymarket-static.s3.us-east-2.amazonaws.com/polymarket-twitter-card.png",
+          "endDate": "2020-11-04T00:00:00Z",
+          "category": "US-current-affairs",
+          "liquidity": "0",
+          "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-joe-biden-get-coronavirus-before-the-election-5a3d4c3b-0a73-419e-a686-be034d2c73ac.png",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-joe-biden-get-coronavirus-before-the-election-5a3d4c3b-0a73-419e-a686-be034d2c73ac.png",
+          "description": "This is a market on if presidential candidate Joe Biden will test positive for COVID-19 before November 3rd, 2020. This will be defined as Joe publicly announcing - via any medium, including social media - that he has tested positive for COVID-19, or some variation of that statement. If it is in reference to antibodies, or he doesn\u2019t publicly acknowledge it, the market will resolve to No.\nIn the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).",
+          "outcomes": "[\"Yes\", \"No\"]",
+          "outcomePrices": "[\"0\", \"0\"]",
+          "volume": "32257.445115",
+          "active": true,
+          "marketType": "normal",
+          "closed": true,
+          "marketMakerAddress": "0x8BD6C3D7a57D650A1870dd338234f90051fe9918",
+          "updatedBy": 9,
+          "createdAt": "2020-10-02T16:10:01.467Z",
+          "updatedAt": "2024-04-23T00:49:51.620233Z",
+          "closedTime": "2020-11-02 16:31:01+00",
+          "mailchimpTag": "3917403",
+          "archived": false,
+          "restricted": false,
+          "volumeNum": 32257.45,
+          "liquidityNum": 0,
+          "endDateIso": "2020-11-04",
+          "hasReviewedDates": true,
+          "readyForCron": true,
+          "volume24hr": 0,
+          "volume1wk": 0,
+          "volume1mo": 0,
+          "volume1yr": 0,
+          "clobTokenIds": "[\"53135072462907880191400140706440867753044989936304433583131786753949599718775\", \"60869871469376321574904667328762911501870754872924453995477779862968218702336\"]",
+          "fpmmLive": true,
+          "volume1wkAmm": 0,
+          "volume1moAmm": 0,
+          "volume1yrAmm": 0,
+          "volume1wkClob": 0,
+          "volume1moClob": 0,
+          "volume1yrClob": 0,
+          "events": [
+            {
+              "id": "4690",
+              "ticker": "will-joe-biden-get-coronavirus-before-the-election",
+              "slug": "will-joe-biden-get-coronavirus-before-the-election",
+              "title": "Will Joe Biden get Coronavirus before the election?",
+              "description": "This is a market on if presidential candidate Joe Biden will test positive for COVID-19 before November 3rd, 2020. This will be defined as Joe publicly announcing - via any medium, including social media - that he has tested positive for COVID-19, or some variation of that statement. If it is in reference to antibodies, or he doesn\u2019t publicly acknowledge it, the market will resolve to No.\nIn the event of ambiguity in terms of the market outcome, the market will be resolved at the sole discretion of the Markets Integrity Committee (MIC).",
+              "startDate": "2020-10-02T00:00:00Z",
+              "creationDate": "2020-10-02T00:00:00Z",
+              "endDate": "2020-11-04T00:00:00Z",
+              "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-joe-biden-get-coronavirus-before-the-election-69e1dbcd-3cfe-4caf-b2af-c00e9ce7186f.png",
+              "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-joe-biden-get-coronavirus-before-the-election-69e1dbcd-3cfe-4caf-b2af-c00e9ce7186f.png",
+              "active": true,
+              "closed": true,
+              "archived": false,
+              "featured": false,
+              "restricted": false,
+              "liquidity": 0,
+              "volume": 32257.45,
+              "openInterest": 0,
+              "sortBy": "ascending",
+              "category": "US-current-affairs",
+              "published_at": "2022-07-27 14:41:12.085+00",
+              "createdAt": "2022-07-27T14:41:12.088Z",
+              "updatedAt": "2024-04-25T18:57:18.376169Z",
+              "competitive": 0,
+              "volume24hr": 0,
+              "volume1wk": 0,
+              "volume1mo": 0,
+              "volume1yr": 0,
+              "liquidityAmm": 0,
+              "liquidityClob": 0,
+              "commentCount": 0,
+              "cyom": false,
+              "closedTime": "2022-07-27T14:41:12.088Z",
+              "showAllOutcomes": false,
+              "showMarketImages": true,
+              "enableNegRisk": false,
+              "negRiskAugmented": false,
+              "pendingDeployment": false,
+              "deploying": false,
+              "requiresTranslation": false
+            }
+          ],
+          "creator": "",
+          "ready": false,
+          "funded": false,
+          "cyom": false,
+          "competitive": 0,
+          "pagerDutyNotificationEnabled": false,
+          "approved": true,
+          "rewardsMinSize": 0,
+          "rewardsMaxSpread": 0,
+          "spread": 1,
+          "oneDayPriceChange": 0,
+          "oneHourPriceChange": 0,
+          "oneWeekPriceChange": 0,
+          "oneMonthPriceChange": 0,
+          "oneYearPriceChange": 0,
+          "lastTradePrice": 0,
+          "bestBid": 0,
+          "bestAsk": 1,
+          "clearBookOnStart": true,
+          "manualActivation": false,
+          "negRiskOther": false,
+          "umaResolutionStatuses": "[]",
+          "pendingDeployment": false,
+          "deploying": false,
+          "rfqEnabled": false,
+          "holdingRewardsEnabled": false,
+          "feesEnabled": false,
+          "requiresTranslation": false
+        },
+        "notes": "Returns list of prediction markets. No API key required."
+      }
+    },
+    "crypto_com": {
+      "name": "Crypto.com Exchange",
+      "description": "Cryptocurrency price data",
+      "authentication": "None required for public endpoints",
+      "base_url": "https://api.crypto.com/v2/public",
+      "rate_limit": "100 requests per second",
+      "example": {
+        "status": "error",
+        "error": "('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+      }
+    },
+    "newsapi": {
+      "name": "NewsAPI",
+      "description": "News articles and headlines",
+      "authentication": "API key required (free tier available)",
+      "base_url": "https://newsapi.org/v2",
+      "rate_limit": "100 requests per day (free tier)",
+      "signup_url": "https://newsapi.org/register",
+      "example": {
+        "status": "success",
+        "endpoint": "https://newsapi.org/v2/everything",
+        "method": "GET",
+        "params": {
+          "q": "Bitcoin",
+          "language": "en",
+          "sortBy": "relevancy",
+          "pageSize": 1,
+          "apiKey": "YOUR_API_KEY_HERE"
+        },
+        "response_sample": {
+          "source": {
+            "id": "the-verge",
+            "name": "The Verge"
+          },
+          "author": "Emma Roth",
+          "title": "Two cybersecurity employees plead guilty to carrying out ransomware attacks",
+          "description": "Two former employees at cybersecurity firms - one of whom was a ransomware negotiator - have pleaded guilty to carrying out a series of ransomware attacks in 2023. The Department of Justice announced the guilty pleas on Tuesday, saying 40-year-old Ryan Goldbe\u2026",
+          "url": "https://www.theverge.com/news/851467/cybersecurity-employees-plead-guilty-alphv-blackcat-ransomware",
+          "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23318435/akrales_220309_4977_0232.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "publishedAt": "2025-12-30T18:32:27Z",
+          "content": "<ul><li></li><li></li><li></li></ul>\r\nThe pair targeted several companies with ALPHV / BlackCat ransomware and extorted $1.2 million in Bitcoin.\r\nThe pair targeted several companies with ALPHV / Blac\u2026 [+3197 chars]"
+        },
+        "notes": "Returns news articles. Requires free API key from newsapi.org. Rate limit: 100 requests/day on free tier."
+      }
+    }
+  },
+  "usage_notes": {
+    "polymarket": [
+      "Returns array of market objects",
+      "Each market has: id, question, outcomePrices, volume, etc.",
+      "Use 'active: true' parameter to filter resolved markets"
+    ],
+    "crypto_com": [
+      "Returns nested JSON with result.data array",
+      "Price fields: 'a' (ask), 'b' (bid), 'c' (change)",
+      "All prices are strings, convert to float for calculations"
+    ],
+    "newsapi": [
+      "Returns articles array with title, description, url, etc.",
+      "Use 'q' parameter for keyword search",
+      "Free tier limited to 100 requests/day",
+      "Articles may be cached for up to 15 minutes"
+    ]
+  }
+}

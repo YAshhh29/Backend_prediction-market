@@ -1,0 +1,27 @@
+# API clients
+requests==2.31.0
+python-dotenv==1.0.0
+
+# Data processing (Windows-compatible versions with pre-built wheels)
+pandas==2.2.0
+numpy==1.26.3
+
+# Database
+sqlalchemy==2.0.21
+
+# Scheduling
+schedule==1.2.0
+
+# Web framework (for later)
+fastapi==0.104.0
+uvicorn[standard]==0.23.2
+pydantic==2.4.2
+
+# Web3 (for later)
+web3==6.11.0
+
+# News API
+newsapi-python==0.2.7
+
+# Testing
+pytest==7.4.2
