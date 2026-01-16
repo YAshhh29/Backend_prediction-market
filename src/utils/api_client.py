@@ -23,7 +23,7 @@ class APIClient:
         if active:
             params["active"] = True
         
-        response = requests.get(url, params=params, timeout=10)
+        response = requests.get(url, params=params, timeout=30)
         response.raise_for_status()
         return response.json()
     

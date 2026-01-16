@@ -34,28 +34,42 @@ def test_polymarket():
         return False
 
 def test_crypto_com():
-    """Test Crypto.com API"""
+    """Test Crypto.com API with retry logic"""
     print("\n🟠 Testing Crypto.com API...")
-    try:
-        url = "https://api.crypto.com/v2/public/get-ticker"
-        params = {"instrument_name": "BTC_USD"}
-        response = requests.get(url, params=params, timeout=10)
-        response.raise_for_status()
-        
-        data = response.json()
-        price = data['result']['data'][0]['a']
-        change = data['result']['data'][0]['c']
-        
-        print(f"✅ Success! BTC Price: ${float(price):,.2f}")
-        print(f"   24h Change: {float(change):+.2f}%")
-        
-        return True
-    except requests.exceptions.ConnectionError:
-        print(f"❌ Connection Error: Network issue, try again later")
-        return False
-    except Exception as e:
-        print(f"❌ Error: {e}")
-        return False
+    
+    max_retries = 3
+    for attempt in range(max_retries):
+        try:
+            url = "https://api.crypto.com/v2/public/get-ticker"
+            params = {"instrument_name": "BTC_USD"}
+            response = requests.get(url, params=params, timeout=10)
+            response.raise_for_status()
+            
+            data = response.json()
+            price = data['result']['data'][0]['a']
+            change = data['result']['data'][0]['c']
+            
+            if attempt > 0:
+                print(f"   (Succeeded on attempt {attempt + 1}/{max_retries})")
+            
+            print(f"✅ Success! BTC Price: ${float(price):,.2f}")
+            print(f"   24h Change: {float(change):+.2f}%")
+            
+            return True
+            
+        except (requests.exceptions.ConnectionError, requests.exceptions.Timeout) as e:
+            if attempt < max_retries - 1:
+                print(f"   ⚠️  Connection error, retrying... ({attempt + 1}/{max_retries})")
+                continue
+            else:
+                print(f"❌ Failed after {max_retries} attempts")
+                print(f"   This is normal - Crypto.com API occasionally blocks connections")
+                return False
+        except Exception as e:
+            print(f"❌ Error: {e}")
+            return False
+    
+    return False
 
 def test_news_api():
     """Test NewsAPI"""
